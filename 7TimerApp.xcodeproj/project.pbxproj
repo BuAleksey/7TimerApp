@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		879AE7012916AE8B0072B57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7002916AE8B0072B57B /* AppDelegate.swift */; };
 		879AE7032916AE8B0072B57B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7022916AE8B0072B57B /* SceneDelegate.swift */; };
-		879AE7052916AE8B0072B57B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7042916AE8B0072B57B /* ViewController.swift */; };
+		879AE7052916AE8B0072B57B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7042916AE8B0072B57B /* MainViewController.swift */; };
 		879AE7082916AE8B0072B57B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879AE7062916AE8B0072B57B /* Main.storyboard */; };
 		879AE70A2916AE8C0072B57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879AE7092916AE8C0072B57B /* Assets.xcassets */; };
 		879AE70D2916AE8C0072B57B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879AE70B2916AE8C0072B57B /* LaunchScreen.storyboard */; };
+		879AE7192916B2E20072B57B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7182916B2E20072B57B /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		879AE6FD2916AE8B0072B57B /* 7TimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7TimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		879AE7002916AE8B0072B57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		879AE7022916AE8B0072B57B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		879AE7042916AE8B0072B57B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		879AE7042916AE8B0072B57B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		879AE7072916AE8B0072B57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		879AE7092916AE8C0072B57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		879AE70C2916AE8C0072B57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		879AE70E2916AE8C0072B57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879AE7182916B2E20072B57B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		879AE6FF2916AE8B0072B57B /* 7TimerApp */ = {
 			isa = PBXGroup;
 			children = (
-				879AE7002916AE8B0072B57B /* AppDelegate.swift */,
-				879AE7022916AE8B0072B57B /* SceneDelegate.swift */,
-				879AE7042916AE8B0072B57B /* ViewController.swift */,
-				879AE7062916AE8B0072B57B /* Main.storyboard */,
+				879AE7142916AE940072B57B /* ViewControllers */,
+				879AE7172916AEDE0072B57B /* Storydoards */,
+				879AE7152916AEA80072B57B /* Models */,
+				879AE7162916AED60072B57B /* App */,
 				879AE7092916AE8C0072B57B /* Assets.xcassets */,
-				879AE70B2916AE8C0072B57B /* LaunchScreen.storyboard */,
-				879AE70E2916AE8C0072B57B /* Info.plist */,
 			);
 			path = 7TimerApp;
+			sourceTree = "<group>";
+		};
+		879AE7142916AE940072B57B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				879AE7042916AE8B0072B57B /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		879AE7152916AEA80072B57B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				879AE7182916B2E20072B57B /* Weather.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		879AE7162916AED60072B57B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				879AE7022916AE8B0072B57B /* SceneDelegate.swift */,
+				879AE7002916AE8B0072B57B /* AppDelegate.swift */,
+				879AE70E2916AE8C0072B57B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		879AE7172916AEDE0072B57B /* Storydoards */ = {
+			isa = PBXGroup;
+			children = (
+				879AE7062916AE8B0072B57B /* Main.storyboard */,
+				879AE70B2916AE8C0072B57B /* LaunchScreen.storyboard */,
+			);
+			path = Storydoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879AE7052916AE8B0072B57B /* ViewController.swift in Sources */,
+				879AE7192916B2E20072B57B /* Weather.swift in Sources */,
+				879AE7052916AE8B0072B57B /* MainViewController.swift in Sources */,
 				879AE7012916AE8B0072B57B /* AppDelegate.swift in Sources */,
 				879AE7032916AE8B0072B57B /* SceneDelegate.swift in Sources */,
 			);
@@ -289,12 +325,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 7TimerApp/Info.plist;
+				INFOPLIST_FILE = 7TimerApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.-TimerApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +356,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 7TimerApp/Info.plist;
+				INFOPLIST_FILE = 7TimerApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.-TimerApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
