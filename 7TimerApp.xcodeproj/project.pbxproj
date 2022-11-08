@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87303762291AE45800B5F436 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87303761291AE45800B5F436 /* NetworkManager.swift */; };
 		879AE7012916AE8B0072B57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7002916AE8B0072B57B /* AppDelegate.swift */; };
 		879AE7032916AE8B0072B57B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7022916AE8B0072B57B /* SceneDelegate.swift */; };
 		879AE7052916AE8B0072B57B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7042916AE8B0072B57B /* MainViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87303761291AE45800B5F436 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		879AE6FD2916AE8B0072B57B /* 7TimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7TimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		879AE7002916AE8B0072B57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		879AE7022916AE8B0072B57B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87303760291AE40200B5F436 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				87303761291AE45800B5F436 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		879AE6F42916AE8B0072B57B = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 			children = (
 				879AE7142916AE940072B57B /* ViewControllers */,
 				879AE7172916AEDE0072B57B /* Storydoards */,
+				87303760291AE40200B5F436 /* Services */,
 				879AE7152916AEA80072B57B /* Models */,
 				879AE7162916AED60072B57B /* App */,
 				879AE7092916AE8C0072B57B /* Assets.xcassets */,
@@ -175,6 +186,7 @@
 			files = (
 				879AE7192916B2E20072B57B /* Weather.swift in Sources */,
 				879AE7052916AE8B0072B57B /* MainViewController.swift in Sources */,
+				87303762291AE45800B5F436 /* NetworkManager.swift in Sources */,
 				879AE7012916AE8B0072B57B /* AppDelegate.swift in Sources */,
 				879AE7032916AE8B0072B57B /* SceneDelegate.swift in Sources */,
 			);
@@ -331,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,6 +375,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

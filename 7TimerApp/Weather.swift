@@ -21,6 +21,10 @@ struct Datasery: Codable {
     let weather: String
     let temp2M: Temp2M
     let wind10MMax: Int
+    
+    var windDescription: String {
+        "Wind \(wind10MMax) m/s"
+    }
 
     enum CodingKeys: String, CodingKey {
         case date, weather
@@ -31,4 +35,11 @@ struct Datasery: Codable {
 
 struct Temp2M: Codable {
     let max, min: Int
+    
+    var minDescription: String {
+        "Min \(min) °C"
+    }
+    var maxDescription: String {
+        "Max \(max) °C"
+    }
 }
