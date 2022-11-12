@@ -6,16 +6,20 @@
 //
 
 import UIKit
+import SpringAnimation
 
 final class MainViewController: UIViewController {
-    @IBOutlet var weatherImage: UIImageView!
-    @IBOutlet var weatherLabel: UILabel!
-    @IBOutlet var minTempLabel: UILabel!
-    @IBOutlet var maxTempLabel: UILabel!
-    @IBOutlet var windLabel: UILabel!
+    @IBOutlet var dateLabel: SpringLabel!
+    @IBOutlet var weatherImage: SpringImageView!
+    @IBOutlet var weatherLabel: SpringLabel!
+    @IBOutlet var minTempLabel: SpringLabel!
+    @IBOutlet var maxTempLabel: SpringLabel!
+    @IBOutlet var windLabel: SpringLabel!
     
     @IBOutlet var weatherStack: UIStackView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
+    var day = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +27,21 @@ final class MainViewController: UIViewController {
         fetchWeather()
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
+    }
+    
+    @IBAction func getNextDayWeather(_ sender: SpringButton) {
+        weatherStack.isHidden = true
+        activityIndicator.startAnimating()
+        
+        if sender.currentTitle != "Next day" {
+            sender.setAnimation()
+            sender.setTitle("Next day", for: .normal)
+        }
+        fetchWeather()
+        if day == 6 {
+            sender.setAnimation()
+            sender.setTitle("Return to start", for: .normal)
+        }
     }
 }
 
@@ -42,13 +61,27 @@ extension MainViewController {
                 self?.activityIndicator.stopAnimating()
                 self?.weatherStack.isHidden = false
                 
+                self?.weatherImage.setAnimation()
                 self?.weatherImage.image = UIImage(
-                    named: weather.dataseries.first?.weather ?? "noImage"
+                    named: weather.dataseries[self?.day ?? 0].weather
                 )
-                self?.weatherLabel.text = weather.dataseries.first?.weather
-                self?.minTempLabel.text = weather.dataseries.first?.temp2M.minDescription
-                self?.maxTempLabel.text = weather.dataseries.first?.temp2M.maxDescription
-                self?.windLabel.text = weather.dataseries.first?.windDescription
+
+                self?.dateLabel.setAnamation()
+                self?.dateLabel.text = String(weather.dataseries[self?.day ?? 0].date)
+                self?.weatherLabel.setAnamation()
+                self?.weatherLabel.text = weather.dataseries[self?.day ?? 0].weather
+                self?.minTempLabel.setAnamation()
+                self?.minTempLabel.text = weather.dataseries[self?.day ?? 0].temp2M.minDescription
+                self?.maxTempLabel.setAnamation()
+                self?.maxTempLabel.text = weather.dataseries[self?.day ?? 0].temp2M.maxDescription
+                self?.windLabel.setAnamation()
+                self?.windLabel.text = weather.dataseries[self?.day ?? 0].windDescription
+                
+                if self?.day ?? 0 < 6 {
+                    self?.day += 1
+                } else {
+                    self?.day = 0
+                }
             case .failure(let error):
                 print(error.localizedDescription)
             }

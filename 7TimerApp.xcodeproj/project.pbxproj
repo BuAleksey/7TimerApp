@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		87303762291AE45800B5F436 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87303761291AE45800B5F436 /* NetworkManager.swift */; };
+		876582DB291FC4970087D8B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 876582DA291FC4970087D8B9 /* Alamofire */; };
+		876582DE291FC4CF0087D8B9 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 876582DD291FC4CF0087D8B9 /* SpringAnimation */; };
+		876582E2291FC8890087D8B9 /* Extension + SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876582E1291FC8890087D8B9 /* Extension + SpringView.swift */; };
+		876582E4291FCBA70087D8B9 /* Extension + SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876582E3291FCBA70087D8B9 /* Extension + SpringImageView.swift */; };
+		876582E6291FCE9D0087D8B9 /* Extension + SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876582E5291FCE9D0087D8B9 /* Extension + SpringButton.swift */; };
 		879AE7012916AE8B0072B57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7002916AE8B0072B57B /* AppDelegate.swift */; };
 		879AE7032916AE8B0072B57B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7022916AE8B0072B57B /* SceneDelegate.swift */; };
 		879AE7052916AE8B0072B57B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AE7042916AE8B0072B57B /* MainViewController.swift */; };
@@ -19,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		87303761291AE45800B5F436 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		876582E1291FC8890087D8B9 /* Extension + SpringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + SpringView.swift"; sourceTree = "<group>"; };
+		876582E3291FCBA70087D8B9 /* Extension + SpringImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + SpringImageView.swift"; sourceTree = "<group>"; };
+		876582E5291FCE9D0087D8B9 /* Extension + SpringButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + SpringButton.swift"; sourceTree = "<group>"; };
 		879AE6FD2916AE8B0072B57B /* 7TimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7TimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		879AE7002916AE8B0072B57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		879AE7022916AE8B0072B57B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876582DE291FC4CF0087D8B9 /* SpringAnimation in Frameworks */,
+				876582DB291FC4970087D8B9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +57,16 @@
 				87303761291AE45800B5F436 /* NetworkManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		876582E0291FC8380087D8B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				876582E1291FC8890087D8B9 /* Extension + SpringView.swift */,
+				876582E3291FCBA70087D8B9 /* Extension + SpringImageView.swift */,
+				876582E5291FCE9D0087D8B9 /* Extension + SpringButton.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		879AE6F42916AE8B0072B57B = {
@@ -71,6 +91,7 @@
 				879AE7142916AE940072B57B /* ViewControllers */,
 				879AE7172916AEDE0072B57B /* Storydoards */,
 				87303760291AE40200B5F436 /* Services */,
+				876582E0291FC8380087D8B9 /* Extensions */,
 				879AE7152916AEA80072B57B /* Models */,
 				879AE7162916AED60072B57B /* App */,
 				879AE7092916AE8C0072B57B /* Assets.xcassets */,
@@ -129,6 +150,10 @@
 			dependencies = (
 			);
 			name = 7TimerApp;
+			packageProductDependencies = (
+				876582DA291FC4970087D8B9 /* Alamofire */,
+				876582DD291FC4CF0087D8B9 /* SpringAnimation */,
+			);
 			productName = 7TimerApp;
 			productReference = 879AE6FD2916AE8B0072B57B /* 7TimerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +182,10 @@
 				Base,
 			);
 			mainGroup = 879AE6F42916AE8B0072B57B;
+			packageReferences = (
+				876582D9291FC4970087D8B9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				876582DC291FC4CF0087D8B9 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 879AE6FE2916AE8B0072B57B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -184,11 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876582E4291FCBA70087D8B9 /* Extension + SpringImageView.swift in Sources */,
 				879AE7192916B2E20072B57B /* Weather.swift in Sources */,
+				876582E2291FC8890087D8B9 /* Extension + SpringView.swift in Sources */,
 				879AE7052916AE8B0072B57B /* MainViewController.swift in Sources */,
 				87303762291AE45800B5F436 /* NetworkManager.swift in Sources */,
 				879AE7012916AE8B0072B57B /* AppDelegate.swift in Sources */,
 				879AE7032916AE8B0072B57B /* SceneDelegate.swift in Sources */,
+				876582E6291FCE9D0087D8B9 /* Extension + SpringButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +446,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		876582D9291FC4970087D8B9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		876582DC291FC4CF0087D8B9 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		876582DA291FC4970087D8B9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 876582D9291FC4970087D8B9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		876582DD291FC4CF0087D8B9 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 876582DC291FC4CF0087D8B9 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 879AE6F52916AE8B0072B57B /* Project object */;
 }

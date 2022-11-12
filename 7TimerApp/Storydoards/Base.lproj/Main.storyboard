@@ -18,41 +18,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-QK-5nM">
-                                <rect key="frame" x="95" y="116.99999999999997" width="200" height="324.33333333333326"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-QK-5nM">
+                                <rect key="frame" x="95" y="124.66666666666666" width="200" height="353.66666666666674"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IRl-gB-oKY">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-U7-1Vb" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="81" y="0.0" width="38.333333333333343" height="21.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IRl-gB-oKY" customClass="SpringImageView" customModule="SpringAnimation">
+                                        <rect key="frame" x="0.0" y="35.333333333333314" width="200" height="200"/>
                                         <imageReference key="image" image="clear" symbolScale="default"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJe-hq-KWK">
-                                        <rect key="frame" x="48.333333333333336" y="217" width="103.33333333333331" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJe-hq-KWK" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="48.333333333333336" y="249.33333333333331" width="103.33333333333331" height="31"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vri-rg-7a7">
-                                        <rect key="frame" x="43" y="264" width="114" height="20.333333333333314"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="vri-rg-7a7">
+                                        <rect key="frame" x="48" y="294.33333333333331" width="104" height="21.333333333333314"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-SG-L1K">
-                                                <rect key="frame" x="0.0" y="0.0" width="29.666666666666668" height="20.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-SG-L1K" customClass="SpringLabel" customModule="SpringAnimation">
+                                                <rect key="frame" x="0.0" y="0.0" width="29.666666666666668" height="21.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1X-lj-4jv">
-                                                <rect key="frame" x="79.666666666666657" y="0.0" width="34.333333333333343" height="20.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1X-lj-4jv" customClass="SpringLabel" customModule="SpringAnimation">
+                                                <rect key="frame" x="69.666666666666657" y="0.0" width="34.333333333333343" height="21.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWe-Li-TKN">
-                                        <rect key="frame" x="78" y="301.33333333333331" width="44" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWe-Li-TKN" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="78" y="329.66666666666663" width="44" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -62,24 +78,58 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Apb-of-McQ">
                                 <rect key="frame" x="185" y="412" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz7-yD-sLV" customClass="SpringButton" customModule="SpringAnimation">
+                                <rect key="frame" x="95" y="694.33333333333337" width="200" height="42"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                <state key="normal" title="Next day">
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getNextDayWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBt-vf-0lg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOSCOW WEATHER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1O-e2-P9V">
+                                <rect key="frame" x="83.666666666666686" y="77" width="223" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                         <constraints>
-                            <constraint firstItem="Rd6-QK-5nM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="Td1-EA-EBx"/>
+                            <constraint firstItem="J1O-e2-P9V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Tg-J5-tax"/>
+                            <constraint firstItem="J1O-e2-P9V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Nju-pn-YAn"/>
+                            <constraint firstItem="Rd6-QK-5nM" firstAttribute="top" secondItem="J1O-e2-P9V" secondAttribute="bottom" constant="20" id="TZf-7f-AoV"/>
                             <constraint firstItem="Rd6-QK-5nM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="We2-pq-kHh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pz7-yD-sLV" secondAttribute="bottom" multiplier="1.1" id="bt8-Sp-F8a"/>
                             <constraint firstItem="Apb-of-McQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lD2-lR-330"/>
+                            <constraint firstItem="pz7-yD-sLV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oVS-rI-HIT"/>
                             <constraint firstItem="Apb-of-McQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u7E-vD-PWM"/>
+                            <constraint firstItem="pz7-yD-sLV" firstAttribute="width" secondItem="Rd6-QK-5nM" secondAttribute="width" id="vwD-EH-cOG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="Apb-of-McQ" id="igc-Kk-cpA"/>
-                        <outlet property="maxTempLabel" destination="P1X-lj-4jv" id="reC-gr-4ve"/>
-                        <outlet property="minTempLabel" destination="Txc-SG-L1K" id="uO1-43-yEF"/>
-                        <outlet property="weatherImage" destination="IRl-gB-oKY" id="gH2-p5-zSe"/>
-                        <outlet property="weatherLabel" destination="FJe-hq-KWK" id="ya0-7X-tdS"/>
+                        <outlet property="dateLabel" destination="TeY-U7-1Vb" id="tn3-XU-oVq"/>
+                        <outlet property="maxTempLabel" destination="P1X-lj-4jv" id="oay-A5-ruX"/>
+                        <outlet property="minTempLabel" destination="Txc-SG-L1K" id="qVU-AE-gXW"/>
+                        <outlet property="weatherImage" destination="IRl-gB-oKY" id="U2L-9m-JtZ"/>
+                        <outlet property="weatherLabel" destination="FJe-hq-KWK" id="ujI-ho-jXj"/>
                         <outlet property="weatherStack" destination="Rd6-QK-5nM" id="3KR-Pa-3pj"/>
-                        <outlet property="windLabel" destination="tWe-Li-TKN" id="uox-Lv-pgt"/>
+                        <outlet property="windLabel" destination="tWe-Li-TKN" id="iaj-Aa-rcb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,6 +139,9 @@
     </scenes>
     <resources>
         <image name="clear" width="200" height="200"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
