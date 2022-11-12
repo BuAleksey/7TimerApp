@@ -23,7 +23,7 @@ struct Datasery: Codable {
     let wind10MMax: Int
     
     var windDescription: String {
-        "Wind \(wind10MMax) m/s"
+        "🌬️ \(wind10MMax) m/s"
     }
 
     enum CodingKeys: String, CodingKey {

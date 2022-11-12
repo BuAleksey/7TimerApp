@@ -11,7 +11,6 @@ import SpringAnimation
 final class MainViewController: UIViewController {
     @IBOutlet var dateLabel: SpringLabel!
     @IBOutlet var weatherImage: SpringImageView!
-    @IBOutlet var weatherLabel: SpringLabel!
     @IBOutlet var minTempLabel: SpringLabel!
     @IBOutlet var maxTempLabel: SpringLabel!
     @IBOutlet var windLabel: SpringLabel!
@@ -68,8 +67,6 @@ extension MainViewController {
 
                 self?.dateLabel.setAnamation()
                 self?.dateLabel.text = String(weather.dataseries[self?.day ?? 0].date)
-                self?.weatherLabel.setAnamation()
-                self?.weatherLabel.text = weather.dataseries[self?.day ?? 0].weather
                 self?.minTempLabel.setAnamation()
                 self?.minTempLabel.text = weather.dataseries[self?.day ?? 0].temp2M.minDescription
                 self?.maxTempLabel.setAnamation()
